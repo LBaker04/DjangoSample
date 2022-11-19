@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Build application Docker image
           command: |
-            sudo docker build -t ubuntu-test:latest ./Dockerfile
+            docker build -t ubuntu-test:latest ./Dockerfile
       - run:
           name: Save Docker image layer cache
           command: |
